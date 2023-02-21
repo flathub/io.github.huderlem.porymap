@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <component type="desktop">
   <!--Created with jdAppdataEdit 5.1-->
   <id>io.github.huderlem.porymap</id>
@@ -20,10 +20,35 @@
     </screenshot>
   </screenshots>
   <releases>
-    <release version="5.1.1" date="2023-02-21"/>
-    <release version="5.1.0" date="2023-01-22" type="stable">
-      <url>https://github.com/huderlem/porymap/releases/tag/5.1.0</url>
+    <release version="5.1.1" date="2023-02-21" type="stable">
+      <url>https://github.com/huderlem/porymap/releases/tag/5.1.1</url>
       <description>
+        <p>Added:</p>
+        <ul>
+          <li>Add registerToggleAction to the scripting API</li>
+        </ul>
+        <p>Changed:</p>
+        <ul>
+          <li>Change encounter tab copy and paste behavior.</li>
+          <li>A warning will appear if a custom script fails to load or an action fails to run.</li>
+        </ul>
+        <p>Fixed:</p>
+        <ul>
+          <li>Fix null characters being unpredictably written to some JSON files.</li>
+          <li>Fix tilesets that share part of their name loading incorrectly.</li>
+          <li>Fix events being hidden behind connecting maps.</li>
+          <li>Metatile labels with values defined outside their tileset are no longer deleted.</li>
+          <li>Fix the Tileset Editor retaining edit history after changing tilesets.</li>
+          <li>Fix some minor visual issues on the Connections tab.</li>
+          <li>Fix bug which caused encounter configurator to crash if slots in fields containing groups were deleted.</li>
+          <li>Fix bug which caused encounter configurator to crash if last field was deleted.</li>
+          <li>Fix map render when collision view was active while map changed.</li>
+          <li>Fix the updated pokefirered region map graphics appearing in grayscale.</li>
+          <li>Fix the API function registerAction not correctly handling actions with the same name.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="5.1.0" date="2023-01-22" type="stable"><url>https://github.com/huderlem/porymap/releases/tag/5.1.0</url><description>
         <p>Added:</p>
         <ul>
           <li>Add new config options for reorganizing metatile attributes.</li>
