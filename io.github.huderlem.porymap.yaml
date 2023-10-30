@@ -34,3 +34,5 @@ modules:
         path: io.github.huderlem.porymap.desktop
       - type: file
         path: io.github.huderlem.porymap.metainfo.xml
+      - type: patch
+        path: fix-build.patch
