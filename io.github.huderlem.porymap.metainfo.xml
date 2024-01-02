@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <component type="desktop">
-  <!--Created with jdAppdataEdit 5.1-->
+  <!--Created with jdAppStreamEdit 8.0-->
   <id>io.github.huderlem.porymap</id>
   <name>Porymap</name>
   <summary>A map editor for the Pokémon generation 3 decompilation projects</summary>
@@ -20,7 +20,58 @@
     </screenshot>
   </screenshots>
   <releases>
-    <release version="5.2.0" date="2024-01-02"/>
+    <release version="5.2.0" date="2024-01-02" type="stable">
+      <url>https://github.com/huderlem/porymap/releases/tag/5.2.0</url>
+      <description>
+        <p>Added</p>
+        <ul>
+          <li>Add an editor window under Options -&gt; Project Settings... to customize the project-specific settings in porymap.project.cfg and porymap.user.cfg.</li>
+          <li>Add an editor window under Options -&gt; Custom Scripts... for Porymap's API scripts.</li>
+          <li>Add an Open Recent Project menu</li>
+          <li>Add a warning to warp events if they're on an incompatible metatile behavior.</li>
+          <li>Add settings for custom images, including the collision graphics, default event icons, and pokémon icons.</li>
+          <li>Add settings to override any symbol or macro names Porymap expects to find.</li>
+          <li>Add a zoom slider to the Collision tab.</li>
+          <li>Add toggleable grids to the Tileset Editor.</li>
+          <li>Support for custom metatile ID, collision, and elevation data sizes.</li>
+          <li>Support for 8bpp tileset tile images.</li>
+        </ul>
+        <p>Changed</p>
+        <ul>
+          <li>Script dropdowns now include scripts from the current map's scripts file.</li>
+          <li>Encounter Rate now defaults to the most commonly used value, rather than 0.</li>
+          <li>The Collision tab now allows selection of any valid elevation/collision value.</li>
+          <li>The Palette Editor now remembers the Bit Depth setting.</li>
+          <li>The min/max levels on the Wild Pokémon tab will now adjust automatically if they invalidate each other.</li>
+          <li>If the recent project directory doesn't exist Porymap will open an empty project instead of failing with a misleading error message.</li>
+          <li>Settings under Options were relocated either to the Preferences window or Options -&gt; Project Settings.</li>
+          <li>Secret Base and Weather Trigger events are automatically disabled if their respective constants files fail to parse, instead of not opening the project.</li>
+          <li>If a Pokémon icon fails to load Porymap will attempt to predict its filepath. If this also fails it will appear with a placeholder icon, and won't disappear when edited.</li>
+          <li>The bits in metatile attribute masks are now allowed to be non-contiguous.</li>
+          <li>Porymap will now attempt to read metatile attribute masks from the project.</li>
+        </ul>
+        <p>Fixed</p>
+        <ul>
+          <li>Fix text boxes in the Palette Editor calculating color incorrectly.</li>
+          <li>Fix metatile labels being sorted incorrectly for tileset names with multiple underscores.</li>
+          <li>Fix default object sprites retaining dimensions and transparency of the previous sprite.</li>
+          <li>Fix connections not being deleted when the map name text box is cleared.</li>
+          <li>Fix the map border not updating when a tileset is changed.</li>
+          <li>Improve the poor speed of the API functions setMetatileTile and setMetatileTiles.</li>
+          <li>Stop the Tileset Editor from scrolling to the initially selected metatile when saving.</li>
+          <li>Fix 0x0/NULL appearing more than once in the scripts dropdown.</li>
+          <li>Fix the selection outline sticking in single-tile mode on the Prefab tab.</li>
+          <li>Fix heal location data being cleared if certain spaces aren't used in the table.</li>
+          <li>Fix bad URL color contrast on dark themes.</li>
+          <li>Fix some issues when too few/many pokémon are specified for a wild encounter group.</li>
+          <li>Fix Porymap reporting errors for macros it doesn't use.</li>
+          <li>Fix painting on the Collision tab with the opacity slider at 0 painting metatiles.</li>
+          <li>Fix crashes when File-&gt;Reload Project fails.</li>
+          <li>Fix overworld sprite facing directions if spritesheet has vertical layout.</li>
+          <li>Stop reporting Error: Interrupted for custom scripts during project reopen</li>
+        </ul>
+      </description>
+    </release>
     <release version="5.1.1" date="2023-02-21" type="stable">
       <url>https://github.com/huderlem/porymap/releases/tag/5.1.1</url>
       <description>
@@ -49,7 +100,9 @@
         </ul>
       </description>
     </release>
-    <release version="5.1.0" date="2023-01-22" type="stable"><url>https://github.com/huderlem/porymap/releases/tag/5.1.0</url><description>
+    <release version="5.1.0" date="2023-01-22" type="stable">
+      <url>https://github.com/huderlem/porymap/releases/tag/5.1.0</url>
+      <description>
         <p>Added:</p>
         <ul>
           <li>Add new config options for reorganizing metatile attributes.</li>
