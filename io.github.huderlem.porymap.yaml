@@ -1,4 +1,4 @@
-app-id: io.github.huderlem.porymap
+id: io.github.huderlem.porymap
 runtime: org.kde.Platform
 runtime-version: 5.15-23.08
 sdk: org.kde.Sdk
@@ -20,8 +20,8 @@ modules:
     sources:
       - type: archive
         archive-type: tar-gzip
-        url: https://api.github.com/repos/huderlem/porymap/tarball/5.1.1
-        sha256: ec0d32ee24555556f4127cb7a2bdb4e83f9c80874565b0f2c330dc8f680e89a6
+        url: https://api.github.com/repos/huderlem/porymap/tarball/5.2.0
+        sha256: 2a2ec3e5dce3c9717b3813a8eb5965a0884674e54a235fc027eaee5fbe092d07
         x-checker-data:
           type: json
           url: https://api.github.com/repos/huderlem/porymap/releases/latest
@@ -34,5 +34,3 @@ modules:
         path: io.github.huderlem.porymap.desktop
       - type: file
         path: io.github.huderlem.porymap.metainfo.xml
-      - type: patch
-        path: fix-build.patch
