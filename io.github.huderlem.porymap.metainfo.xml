@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <component type="desktop">
-  <!--Created with jdAppStreamEdit 8.0-->
+  <!--Created with jdAppStreamEdit 7.0-->
   <id>io.github.huderlem.porymap</id>
   <name>Porymap</name>
   <summary>A map editor for the Pokémon generation 3 decompilation projects</summary>
@@ -15,11 +15,43 @@
   </description>
   <screenshots>
     <screenshot type="default">
-      <caption>The Main WIndow of Porymap</caption>
+      <caption>The Main Window of Porymap</caption>
       <image type="source">https://github.com/huderlem/porymap/raw/5.1.0/docs/_images/porymap-loaded-project.png</image>
     </screenshot>
   </screenshots>
   <releases>
+    <release version="5.3.0" date="2024-01-16" type="stable">
+      <url>https://github.com/huderlem/porymap/releases/tag/5.3.0</url>
+      <description>
+        <p>Added</p>
+        <ul>
+          <li>Add zoom sliders to the Tileset Editor.</li>
+          <li>Add getMetatileBehaviorName and setMetatileBehaviorName to the API.</li>
+          <li>Add metatile_behaviors, num_primary_palettes, and num_secondary_palettes to constants in the API.</li>
+        </ul>
+        <p>Changed</p>
+        <ul>
+          <li>Metatile ID strings are now padded to their current max, not the overall max.</li>
+          <li>Non-existent directories are now removed from the Open Recent Project menu.</li>
+          <li>Hovering on the layer view in the Tileset Editor now displays the tile ID.</li>
+          <li>Labels in the Script dropdown are now sorted alphabetically.</li>
+          <li>The name of the Heal Locations table is no longer enforced.</li>
+          <li>The API functions ddImage and createImage now support project-relative paths.</li>
+        </ul>
+        <p>Fixed</p>
+        <ul>
+          <li>Fix the metatile selector rectangle jumping when selecting up or left of the origin.</li>
+          <li>Fix the event group tabs sometimes showing an event from the wrong group.</li>
+          <li>Fix the clear buttons in the Shortcuts Editor not actually removing shortcuts.</li>
+          <li>Fix slow speed for the script label autcomplete.</li>
+          <li>Fix deleted script labels still appearing in the autocomplete after project reload.</li>
+          <li>Fix the map search bar stealing focus on startup.</li>
+          <li>Fix border metatiles view not resizing properly.</li>
+          <li>Fix Open Recent Project not clearing the API overlay</li>
+          <li>Fix API error reporting.</li>
+        </ul>
+      </description>
+    </release>
     <release version="5.2.0" date="2024-01-02" type="stable">
       <url>https://github.com/huderlem/porymap/releases/tag/5.2.0</url>
       <description>
