@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
 <component type="desktop">
-  <!--Created with jdAppStreamEdit 7.0-->
+  <!--Created with jdAppStreamEdit 8.0-->
   <id>io.github.huderlem.porymap</id>
   <name>Porymap</name>
   <summary>A map editor for the Pokémon generation 3 decompilation projects</summary>
   <developer_name>huderlem</developer_name>
   <launchable type="desktop-id">io.github.huderlem.porymap.desktop</launchable>
   <metadata_license>CC0-1.0</metadata_license>
-  <project_license>GPL-3.0</project_license>
+  <project_license>GPL-3.0-only</project_license>
   <description>
     <p>Porymap is a cross-platform map editor for the Gen 3 pret decompilation projects. Its primary functions are to allow editing map tiles, collision, events, connections, and properties. Porymap provides additional functionality, such as tileset editing and region map editing.</p>
     <p>Those familiar with traditional Gen 3 binary ROM hacking can think of it as the Advance Map equivalent for the decompilation projects. Porymap supports the same features as Advance Map, so Advance Map users shouldn’t have much difficulty learning how to use Porymap. There are many usability improvements in Porymap. The most notable is undo/redo when painting map tiles.</p>
@@ -20,6 +20,24 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="5.4.0" date="2024-02-14" type="stable">
+      <description>
+        <p>Changed</p>
+        <ul>
+          <li>If Wild Encounters fail to load they are now only disabled for that session, and the settings remain unchanged.</li>
+          <li>Defaults are used if project constants are missing, rather than failing to open the project or changing settings.</li>
+          <li>Selector images now center on the selection when eyedropping or zooming.</li>
+        </ul>
+        <p>Fixed</p>
+        <ul>
+          <li>Fix some minor visual issues with the various zoom sliders.</li>
+          <li>Smooth out scrolling when mouse is over tile/metatile images.</li>
+          <li>Fix the Tileset Editor selectors getting extra white space when changing tilesets.</li>
+          <li>Fix a crash when adding disabled events with the Pencil tool.</li>
+          <li>Fix error log about failing to find the scripts file when a new map is created.</li>
+        </ul>
+      </description>
+    </release>
     <release version="5.3.0" date="2024-01-16" type="stable">
       <url>https://github.com/huderlem/porymap/releases/tag/5.3.0</url>
       <description>
