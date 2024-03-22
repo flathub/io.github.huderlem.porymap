@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <component type="desktop-application">
-  <!--Created with jdAppStreamEdit 8.0-->
+  <!--Created with jdAppStreamEdit 9.0-->
   <id>io.github.huderlem.porymap</id>
   <name>Porymap</name>
   <summary>A map editor for the Pokémon generation 3 decompilation projects</summary>
@@ -16,11 +16,20 @@
   </description>
   <screenshots>
     <screenshot type="default">
-      <caption>The Main Window of Porymap</caption>
+      <caption>The main window of Porymap</caption>
       <image type="source">https://github.com/huderlem/porymap/raw/5.1.0/docs/_images/porymap-loaded-project.png</image>
     </screenshot>
   </screenshots>
   <releases>
+    <release version="5.4.1" date="2024-03-22" type="stable">
+      <url>https://github.com/huderlem/porymap/releases/tag/5.4.1</url>
+      <description>
+        <p>Fixed</p>
+        <ul>
+          <li>Fix object event sprites not loading for some struct data formats</li>
+        </ul>
+      </description>
+    </release>
     <release version="5.4.0" date="2024-02-14" type="stable">
       <description>
         <p>Changed</p>
