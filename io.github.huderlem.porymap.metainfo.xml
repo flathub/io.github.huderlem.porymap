@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <component type="desktop-application">
   <!--Created with jdAppStreamEdit 9.2-->
   <id>io.github.huderlem.porymap</id>
@@ -21,8 +21,28 @@
     </screenshot>
   </screenshots>
   <releases>
-    <release version="6.1.0" date="2025-06-16">
-      <description></description>
+    <release version="6.1.0" date="2025-06-09" type="stable">
+      <description>
+        <p>Added</p>
+        <ul>
+          <li>Add settings to change the application font and the map list font.</li>
+        </ul>
+        <p>Changed</p>
+        <ul>
+          <li>The scale of the map can now be changed while resizing the map.</li>
+        </ul>
+        <p>Fixed</p>
+        <ul>
+          <li>Fix duplicated maps writing the wrong name.</li>
+          <li>Fix small maps being difficult to see while resizing.</li>
+          <li>Fix the map border sometimes not updating to reflect changes.</li>
+          <li>Fix expressions using the prefix '0X' as opposed to '0x' not being recognized has hex numbers.</li>
+          <li>Fix certain characters not writing correctly to JSON files.</li>
+          <li>Fix all <code>map.json</code> files being added to the file watcher at launch.</li>
+          <li>Fix files sometimes being removed from the file watcher if they're deleted as part of a write.</li>
+          <li>Fix <code>porymap.cfg</code> and <code>porymap.shortcuts.cfg</code> writing outside the <code>pret/porymap</code> folder.</li>
+        </ul>
+      </description>
     </release>
     <release version="6.0.0" date="2025-05-27" type="stable">
       <url>https://github.com/huderlem/porymap/releases/tag/6.0.0</url>
