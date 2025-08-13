@@ -20,8 +20,8 @@ modules:
     sources:
       - type: archive
         archive-type: tar-gzip
-        url: https://api.github.com/repos/huderlem/porymap/tarball/6.1.0
-        sha256: 1e3796adcbed33913163672d787482e8fb666cd4a011c584bb1957bd9062113b
+        url: https://api.github.com/repos/huderlem/porymap/tarball/6.2.0
+        sha256: 4638601d7666e60b08e60412e8673a604e3bcdd9420f817b9d691034d0ececba
         x-checker-data:
           type: json
           url: https://api.github.com/repos/huderlem/porymap/releases/latest
