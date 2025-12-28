@@ -1,6 +1,6 @@
 id: io.github.huderlem.porymap
 runtime: org.kde.Platform
-runtime-version: '6.9'
+runtime-version: '6.10'
 sdk: org.kde.Sdk
 command: porymap
 finish-args:
