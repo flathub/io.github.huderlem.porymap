@@ -27,6 +27,7 @@ modules:
           url: https://api.github.com/repos/huderlem/porymap/releases/latest
           version-query: .tag_name
           url-query: .tarball_url
+          timestamp-query: .published_at
           is-main-source: true
       - type: file
         path: io.github.huderlem.porymap.png
