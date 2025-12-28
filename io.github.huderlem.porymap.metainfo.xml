@@ -21,6 +21,42 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="6.3.0" date="2025-12-26" type="stable">
+      <url>https://github.com/huderlem/porymap/releases/tag/6.3.0</url>
+      <description>
+        <p>Added</p>
+        <ul>
+          <li>Add option to sort Locations and Layouts lists by value, rather than alphabetically.</li>
+          <li>Add color space settings for exported images.</li>
+          <li>Add setting to disable the project loading screen.</li>
+        </ul>
+        <p>Changed</p>
+        <ul>
+          <li>Separate <code>File &gt; Duplicate Current Map/Layout</code> into two options to allow duplicating the current layout when a map is open.</li>
+          <li>The name field now receives focus immediately for the new map/layout dialogs.</li>
+          <li>The middle mouse button can now be used to pan around the map views, rather than needing to select the Map Tool. This is a very convenient shortcut that matches popular image-editing programs.</li>
+        </ul>
+        <p>Fixed</p>
+        <ul>
+          <li>Fix crash when a painted tile selection goes out of bounds of the metatile layer view in the Tileset Editor.</li>
+          <li>Fix crash on older versions of Qt when reopening a project with certain windows open.</li>
+          <li>Fix potential crash when painting and the cursor leaves the map area.</li>
+          <li>Fix potential crash when changing maps with the Tileset Editor open.</li>
+          <li>Fix rare crash while quitting Porymap.</li>
+          <li>Fix <code>Edit &gt; Clear Map Entries</code> in the Region Map Editor not saving the applied changes.</li>
+          <li>Fix <code>Edit &gt; Undo/Redo</code> appearing enabled even when they don't do anything.</li>
+          <li>Fix <code>Help &gt; Open Manual</code> being disabled when no project is open.</li>
+          <li>Fix new tilesets potentially overwriting data in an existing directory.</li>
+          <li>Fix exported images on macOS using a different color space than in Porymap.</li>
+          <li>Fix some <code>INCBIN</code> statements not being parsed correctly.</li>
+          <li>Fix excessive logging if Porymap fails to monitor all map files.</li>
+          <li>Fix map connections getting cut off in exported map images if they're on the same side as another short map connection.</li>
+          <li>Fix the project version check failing for some versions of <code>git</code>.</li>
+          <li>Fix some error highlights persisting after the error is resolved.</li>
+          <li>Fix the Layout/Tileset labels on the <code>Metatiles</code> panel disappearing if the panel is too narrow.</li>
+        </ul>
+      </description>
+    </release>
     <release version="6.2.0" date="2025-08-08" type="stable">
       <description>
         <p>Added</p>
