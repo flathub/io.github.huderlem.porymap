@@ -29,6 +29,8 @@ modules:
           url-query: .tarball_url
           timestamp-query: .published_at
           is-main-source: true
+      - type: patch
+        path: desktop-filename.patch
       - type: file
         path: io.github.huderlem.porymap.png
       - type: file
