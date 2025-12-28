@@ -1,8 +1,9 @@
+# Created with jdDesktopEntryEdit 1.8
 [Desktop Entry]
 Type=Application
 Name=Porymap
 Comment=A map editor for the Pokémon generation 3 decompilation projects
-Exec=porymap
 Icon=io.github.huderlem.porymap
-Categories=Game;Utility;Qt;
+Exec=porymap
+Categories=Game;GameTool;Utility;Qt;
 Keywords=Nintendo;Pokemon;GameBoy;GBA;Hack;Mapeditor;
