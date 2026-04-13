@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <component type="desktop-application">
   <!--Created with jdAppStreamEdit 9.2-->
   <id>io.github.huderlem.porymap</id>
@@ -21,8 +21,22 @@
     </screenshot>
   </screenshots>
   <releases>
-    <release version="6.3.1" date="2026-04-12">
-      <description></description>
+    <release version="6.3.1" date="2026-04-12" type="stable">
+      <url>https://github.com/huderlem/porymap/releases/tag/6.3.1</url>
+      <description>
+        <p>Added</p>
+        <ul>
+          <li>Add support for <code>INCGFX</code>.</li>
+          <li>The regular expression for parsing <code>INCBIN</code> / <code>INCGFX</code> is now available under <code>Project Settings</code>.</li>
+        </ul>
+        <p>Fixed</p>
+        <ul>
+          <li>Fix degraded image quality in exported timelapse gifs.</li>
+          <li>Fix custom top-level data in the <code>encounters</code> object of <code>wild_encounters.json</code> being discarded if no <code>fields</code> data is present.</li>
+          <li>Fix event sprites sometimes rendering with incorrect transparency temporarily after a sprite change.</li>
+          <li>Fix event sprite names that appear in <code>symbol_obj_event_gfx_pointers</code> by value and not by name not rendering with the correct sprite.</li>
+        </ul>
+      </description>
     </release>
     <release version="6.3.0" date="2025-12-26" type="stable">
       <url>https://github.com/huderlem/porymap/releases/tag/6.3.0</url>
